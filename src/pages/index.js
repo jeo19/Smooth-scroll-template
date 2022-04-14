@@ -20,9 +20,9 @@ function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection homeObjOne={homeObjOne} />
-      <InfoSection homeObjTwo={homeObjTwo} />
-      <InfoSection homeObjThree={homeObjThree} />
+      <InfoSection {...homeObjOne} />
+      <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjThree} />
     </>
   );
 }
