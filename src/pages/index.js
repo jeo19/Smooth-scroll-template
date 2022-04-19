@@ -5,6 +5,7 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
+  homeObjFour,
 } from "../components/InfoSection/Data";
 
 import Navbar from "../components/Navbar";
@@ -23,6 +24,7 @@ function Home() {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
+      <InfoSection {...homeObjFour} />
     </>
   );
 }

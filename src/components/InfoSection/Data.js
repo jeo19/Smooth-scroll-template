@@ -50,3 +50,20 @@ export const homeObjThree = {
   primary: false,
   darkText: true,
 };
+export const homeObjFour = {
+  id: "signup",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Join our team",
+  headLine: "Creating an account is extremely easy",
+  description:
+    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+  buttonLabel: "Start now",
+  imgStart: false,
+  img: require("../../images/svg-4.svg").default,
+  alt: "Car",
+  dark: false,
+  primary: false,
+  darkText: true,
+};
