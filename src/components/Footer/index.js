@@ -8,13 +8,17 @@ import {
   FooterLinkTitle,
   FooterLink,
 } from "./FooterElements";
+import { animateScroll as scroll } from "react-scroll";
 
 function Footer() {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
-          <FooterLinkWrapper>
+          <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About us</FooterLinkTitle>
               <FooterLink to="/">How it works</FooterLink>
@@ -30,9 +34,9 @@ function Footer() {
               <FooterLink to="/">Destinations</FooterLink>
               <FooterLink to="/">Sponsorships</FooterLink>
             </FooterLinkItems>
-          </FooterLinkWrapper>
+          </FooterLinksWrapper>
 
-          <FooterLinkWrapper>
+          <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Videos</FooterLinkTitle>
               <FooterLink to="/">Submit Video</FooterLink>
@@ -47,8 +51,47 @@ function Footer() {
               <FooterLink to="/">Youtube</FooterLink>
               <FooterLink to="/">Twitter</FooterLink>
             </FooterLinkItems>
-          </FooterLinkWrapper>
+          </FooterLinksWrapper>
         </FooterLinksContainer>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to="/" onClick={toggleHome}>
+              dolla
+            </SocialLogo>
+            <WebsiteRights>
+              dolla © {new Date().getFullYear()} All rights reserved.
+            </WebsiteRights>
+            <SocialIcons>
+              <SocialIconLink href="/" target="_blank" arial-label="Facebook">
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.instagram.com/leonardtcomdt/"
+                target="_blank"
+                arial-label="Instagram"
+              >
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.youtube.com/channel/UCF6Cz50AqAJcg6JC5LDRElg/videos?view_as=subscriber"
+                target="_blank"
+                arial-label="Youtube"
+              >
+                <FaYoutube />
+              </SocialIconLink>
+              <SocialIconLink href="/" target="_blank" arial-label="Twitter">
+                <FaTwitter />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.linkedin.com/in/leonardtlauenstein/"
+                target="_blank"
+                arial-label="Linkedin"
+              >
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
       </FooterWrap>
     </FooterContainer>
   );

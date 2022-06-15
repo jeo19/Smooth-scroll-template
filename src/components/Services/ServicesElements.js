@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   background: #010106;
 
