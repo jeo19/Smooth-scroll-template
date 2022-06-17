@@ -15,6 +15,14 @@ import {
   FooterLinkTitle,
   FooterLink,
 } from "./FooterElements";
+import {
+  SocialMedia,
+  SocialMediaWrap,
+  SocialIconLink,
+  SocialIcons,
+  SocialLogo,
+  WebsiteRights,
+} from "./FooterElements";
 import { animateScroll as scroll } from "react-scroll";
 
 function Footer() {
