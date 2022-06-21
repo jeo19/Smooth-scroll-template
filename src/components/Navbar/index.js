@@ -43,16 +43,52 @@ function Navbar({ toggle }) {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to="about">About</NavLinks>
+                <NavLinks
+                  to="about"
+                  smooth={true}
+                  spy={true}
+                  offset={-80}
+                  duration={500}
+                  exact="true"
+                >
+                  About
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="discover">Discover</NavLinks>
+                <NavLinks
+                  to="discover"
+                  smooth={true}
+                  spy={true}
+                  offset={-80}
+                  duration={500}
+                  exact="true"
+                >
+                  Discover
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="services">Services</NavLinks>
+                <NavLinks
+                  to="services"
+                  smooth={true}
+                  spy={true}
+                  offset={-80}
+                  duration={500}
+                  exact="true"
+                >
+                  Services
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="signup">Sign Up</NavLinks>
+                <NavLinks
+                  to="signup"
+                  smooth={true}
+                  spy={true}
+                  offset={-80}
+                  duration={500}
+                  exact="true"
+                >
+                  Sign Up
+                </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
