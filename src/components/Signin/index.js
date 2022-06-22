@@ -1,13 +1,25 @@
 import React from "react";
+import {
+  Container,
+  FormWrap,
+  Icon,
+  FormContent,
+  Form,
+  FormH1,
+  FormLabel,
+  FormInput,
+  FormButton,
+  Text,
+} from "./SigninElements";
 
 const SignIn = () => {
   return (
     <>
       <Container>
         <FormWrap>
-          <Icon></Icon>
+          <Icon to="/">dolla</Icon>
           <FormContent>
-            <Form actions="#">
+            <Form actio="#">
               <FormH1>Sign in to your account</FormH1>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput type="email" required></FormInput>
